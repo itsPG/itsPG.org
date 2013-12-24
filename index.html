@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> -->
+        <title> itsPG.org </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            html, body {height:100%;}
+            body {
+              background: rgba(5%,10%,5%,0.9);
+
+                
+            }
+            .container {
+              width: 1024px;
+            }
+
+
+            .download_btn {
+
+              font-size: 36px;
+              display: inline;
+
+
+            }
+            .download_btn:hover {
+              background-image: blue;
+            }
+            #bg {
+              background-image: url("./img/kotonohanoniwa.jpg");
+              background-position: center; 
+              background-repeat: no-repeat;
+            }
+            .PG_hr {
+              background-color: #FFF;
+              height: 0px;
+            }
+            #PG_main1 {
+              background: rgba(50%,50%,50%,0.2);
+              margin-bottom: 0px;
+
+            }
+            #PG_main2 {
+              background: rgba(100%,100%,100%,0.7);
+              height: 800px;
+            }
+            #PG_main3 {
+              background: rgba(100%,100%,100%,0.7);
+            }
+            #PG_navbar {
+              font-size: 1.2em;
+            }
+            .PG_portrait {
+              -webkit-transition: 0.3s;
+              -moz-transition: 0.3s;
+              transition: 0.3s;
+              -webkit-border-radius: 50px;
+              -moz-border-radius: 50px;
+              border-radius: 50px;
+              height: 250px;
+              width: 250px;'
+              display: block;
+              -webkit-box-shadow: 10px 10px 10px #AAA;
+              -moz-box-shadow: 10px 10px 10px #AAA;
+              box-shadow: 10px 10px 10px #AAA;
+            }
+            .PG_portrait:hover{
+              -webkit-box-shadow: 0 0 100px rgba(255,255,100,1), inset 0 0 100px rgba(255,255,100,1);
+              -moz-box-shadow: 0 0 100px rgba(255,255,100,1), inset 0 0 100px rgba(255,255,100,1);
+              box-shadow: 0 0 100px rgba(255,255,100,1), inset 0 0 100px rgba(255,255,100,1);
+            }
+            .PG_portfolio {
+              -webkit-transition: 0.3s;
+              -moz-transition: 0.3s;
+              transition: 0.3s;
+              -webkit-border-radius: 50px;
+              -moz-border-radius: 50px;
+              border-radius: 50px;
+              margin-top: 50px;
+              height: 250px;
+              width: 250px;'
+              display: block;
+              -webkit-box-shadow: 20px 20px 20px #AAA;
+              -moz-box-shadow: 20px 20px 20px #AAA;
+              box-shadow: 20px 20px 20px #AAA;
+            }
+            .PG_portfolio:hover{
+
+              -webkit-box-shadow: 0 0 100px rgba(255,255,100,1), inset 0 0 100px rgba(255,255,100,1);
+              -moz-box-shadow: 0 0 100px rgba(255,255,100,1), inset 0 0 100px rgba(255,255,100,1);
+              box-shadow: 0 0 100px rgba(255,255,100,1), inset 0 0 100px rgba(255,255,100,1);
+            }
+            #PG_itsPGorg {
+              font-size: 128px;
+              margin-bottom: 50px;
+
+            }
+            .introduction {
+              font-size: 1.2em;
+              margin: 30px;
+              background: rgba(100%,100%,100%,0.7);
+              padding: 20px;
+
+            }
+            .PG_col {
+              font-size: 1.2em;
+
+              text-align: center;
+            }
+            .PG_bg {
+              margin-bottom: 0px;
+              padding: 20px;
+            }
+            .PG_block {
+              -webkit-border-radius: 20px;
+              -moz-border-radius: 20px;
+              border-radius: 20px;
+              background: rgba(100%,100%,100%,0.5);
+
+            }
+            .PG_title {
+              -webkit-border-radius: 70px;
+              -moz-border-radius: 70px;
+              border-radius: 70px;
+              text-align:center;
+              background: rgba(100%, 100%, 100%, 0.5);
+              padding: 20px;
+              margin: 20px;
+            }
+            .PG_emp {
+              text-shadow: 5px 5px 5px #FFF;
+            }
+            #PG_footer {
+              color: #FFF;
+              font-size: 1.2em;
+              text-align: right;
+            }
+            .PG_tc {
+              display:none;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body data-spy="scroll" data-target=".navbar-example"><div id="PG_bg">
+
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="navbar navbar-inverse navbar-fixed-top navbar-example" id="PG_navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">itsPG</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#home" class="scroll">Home</a></li>
+            <li><a href="#about" class="scroll">About</a></li>
+            <li><a href="#awards" class="scroll">Awards</a></li>
+            <li><a href="#portfolio" class="scroll">Portfolio</a></li>
+            <li><a href="#skills" class="scroll">Skills</a></li>
+            <li><a href="#experience" class="scroll">Experience</a></li>
+            <li><a href="#" class="change_lang"><span class="PG_eng">中文版網站</span><span class="PG_tc">English Website</span></a></li>
+          </ul>
+
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div id="bg">
+      <div id="home"></div>
+      <div class="jumbotron " id="PG_main1">
+        <div class="container PG_block" id="PG_main2">
+          <div class="col-lg-3">
+
+          </div>
+          <div class="col-lg-6">
+            <h1 id="PG_itsPGorg">itsPG.org</h1>
+          </div>
+          <div class="col-lg-3" style="text-align: right;">
+            <a class="btn btn-primary change_lang" style="font-size: 1.2em;">
+              <span class="PG_eng">切換為中文</span>
+              <span class="PG_tc">Change to English</span>
+            </a>
+          </div>
+          
+          <div class="col-lg-12" style="clear: left;">
+          </div>
+
+          <div class="col-lg-4">
+            <div class="PG_col">
+              <img src="img/eruru.jpg" alt="ACG" class="PG_portrait"/>
+              <h1>ACG</h1>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="PG_col">
+              <img src="img/coding.jpg" alt="coding" class="PG_portrait"/>
+              <h1>Coding</h1>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="PG_col">
+              <img src="img/life_2013.jpg" alt="life" class="PG_portrait"/>
+              <h1>Life</h1>
+            </div>
+          </div>
+          <div class="col-lg-12" style="clear: left; text-align: center;">
+            <hr class="PG_hr">
+            <div class="col-lg-6" style="text-align: left; font-size:1.2em;">
+              <p>ID: PG / itsPG</p>
+              <p>Name: Tsung-Han Tsai (蔡宗翰)</p>
+              <p>E-mail: smartPG [at] gmail.com</p>
+              <p>Github: <a href="https://github.com/itsPG">itsPG</a> </p>
+              
+            </div>
+            <div class="col-lg-6">
+              <span class="PG_eng">Download Resume</span> <span class="PG_tc">履歷下載</span> (.pdf)<br>
+              <a class="btn btn-success download_btn PG_disabled_btn" href="PG_resume_eng.pdf">English ver.</a>
+              <a class="btn btn-success download_btn" href="PG_resume_tc.pdf">　中文版　</a>
+            </div>
+            
+          </div>
+          <br>
+          <br>
+          <br>
+
+        </div>
+      </div>
+    </div>
+    <div class="PG_bg" style="background: rgba(5%,15%,5%,0.7);" id="about">
+      <div class="jumbotron container PG_block">
+        <h1 class="PG_title">About</h1>
+
+        <div class="introduction PG_eng" style="height:500px">
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;I'm PG, a.k.a. itsPG. My name is Tsung-Han Tsai (蔡宗翰). I completed senior high school in TNFSH. In 2006, I entered NSYSU and graduated in 2011 with a bachelor's degree in CSE. During my college years, I practiced my programming skills and my work is recongnized by getting good scores in programming contests. In 2011, I chose to pursue my master's degree in the Network Engineering College of Computer Science of NCTU and I finished my oral defense in Nov, 2013.
+          </p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;I enjoy coding, especially when I'm writing something amazing that does improve others' life. I'm skilled in C/C++ since I've used C++ to solve over 500 problems in UVa Online Judge. I also use JavaScript and Python to help me finish my tasks. I manage my codes by git, pay attention to unit tests, and think KISS (Keeps It Simple and Stupid) is the best principle in programming.</p>
+        </div>
+
+      <div class="introduction PG_tc" style="height:500px">
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;我是蔡宗翰，網路上ID是PG或者是itsPG。 2006年的時候從台南一中畢業，2011年的時候自中山大學畢業並取得資工學士學位。在我的大學生涯期間，我時常鍛鍊我的程式技巧，並且在各項程式競賽中都有不錯的表現。 後來我選擇在交大網路工程所攻讀碩士學位，並於2013年11月的時候完成碩士學位口試。
+          </p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;我喜歡寫程式，對於寫一些能夠幫助別人的工具特別有興趣，我最熟悉的語言是C/C++，曾用C++完成了500題以上的ACM題目。除了C++以外，我平常也會使用JavaScript跟Python來完成我的工作。 我用git管理程式碼，注重unit tests，特愛簡約風格，認為KISS principle是程式設計中最棒的原則。</p>
+          <br><br>
+        </div>
+      </div> 
+    </div>
+
+    <div class="PG_bg" style="background: rgba(15%,5%,5%,0.7);" id="awards">
+      <div class="jumbotron container PG_block">
+        <h1 class="PG_title">Awards and Achievements</h1>
+        <div class="introduction PG_eng">
+          <ul>
+            <li>2010, NSYSU Programming Contest - 2nd place</li>
+            <li>2009, ACM-ICPC Asia Jakarta Regional Contest - #22 place</li>
+            <li>2009, ACM-ICPC Asia Hsinchu Regional Contest - #28 place</li>
+            <li>2009, National College Programming Contest - Honorable Mentioned</li>
+            <li>2009, NSYSU Programming Contest - 2nd place</li>
+            <li><b class="PG_emp">2008, ACM-ICPC Asia Kuala Lumpur Regional Contest - #14 place</b></li>
+            <li><b class="PG_emp">2008, ACM-ICPC Asia Taipei Regional Contest - #22 place</b></li>
+            <li>2008, National College Programming Contest - Honorable Mentioned</li>
+            <li><b class="PG_emp">2008, NSYSU Programming Contest - 1st place</b></li>
+            <li>2007, NSYSU Programming Contest - 2nd place</li>
+          </ul>
+        </div>
+        <div class="introduction PG_tc">
+          <ul>
+            <li>2010, 中山大學程式能力競賽 第二名</li>
+            <li>2009, ACM-ICPC 亞洲區 印尼雅加達站 第22名</li>
+            <li>2009, ACM-ICPC 亞洲區 台灣新竹站 第28名</li>
+            <li>2009, 全國大專電腦軟體設計競賽 大學甲組 佳作</li>
+            <li>2009, 中山大學程式設計競賽 第二名</li>
+            <li><b class="PG_emp">2008, ACM-ICPC 亞洲區 馬來西亞吉隆坡站 第14名</b></li>
+            <li><b class="PG_emp">2008, ACM-ICPC 亞洲區 台灣台北站 第22名</b></li>
+            <li>2008, 全國大專電腦軟體設計競賽 大學甲組 佳作</li>
+            <li><b class="PG_emp">2008, 中山大學程式能力競賽 第一名</b></li>
+            <li>2007, 中山大學程式設計競賽 第二名</li>
+          </ul>
+        </div>
+      </div> 
+    </div>
+
+    <div class="PG_bg" style="background: rgba(0%,10%,10%,0.7);" id="portfolio">
+      <div class="jumbotron container PG_block">
+        <h1 class="PG_title">Portfolio</h1>
+
+        <div class="introduction">
+          <div class="col-lg-12">
+            <div class="col-lg-4">
+              <a href="https://github.com/itsPG/--orihime--AnimeCloud">
+                <img src="img/animecloud.jpg" alt="animecloud" class="PG_portfolio"/>
+              </a>
+              <h2>Anime Cloud</h2>
+              <p class="PG_eng">It indexes the .mp4 files in hard-disk automatically and provides a list through httpd server.</p>
+              <p class="PG_tc">此程式能夠掃描硬碟內的符合指定名稱的mp4檔並加以整理，以及用httpd server的形式分享整理後的清單。</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://github.com/itsPG/---Orihime---dmhy_downloader">
+                <img src="img/dmhy.jpg" alt="dmhy" class="PG_portfolio"/>
+              </a>
+              <h2>Torrent hunter</h2>
+              <p class="PG_eng">It parses a website page, compares the content, and download the torrents that match our requests.</p>
+              <p class="PG_tc">此程式能夠讀取以及分析網頁，將內容與目標清單做比較，並根據目前的需求下載＆讀入指定的種子檔。</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://github.com/itsPG/99manga-preloader">
+                <img src="img/99manga.jpg" alt="99manga" class="PG_portfolio"/>
+              </a>
+              <h2>99manga preloader</h2>
+              <p class="PG_eng">It speeds up the website by preloading the images. You may download it from chrome web store.</p>
+              <p class="PG_tc">此程式利用預讀的方式加速99manga網站。 本擴充套件可於chrome應用程式中取得。</p>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="col-lg-4">
+              <a href="https://github.com/itsPG/maxflow.js">
+                <img src="img/maxflow.jpg" alt="maxflow" class="PG_portfolio"/>
+              </a>
+              <h2>Maxflow Mincost</h2>
+              <p class="PG_eng">I implemented maxflow mincost algorithm. It solves flow problems and draw the graph by animation.</p>
+              <p class="PG_tc">我用JS實做出maxflow mincost演算法，可以拿來解分配問題以及網路流問題，同時會用動畫呈現計算過程。</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://github.com/itsPG/rtp-x-mjpeg-x-js">
+                <img src="img/rtp_player.jpg" alt="rtp_player" class="PG_portfolio"/>
+              </a>
+              <h2>RTP player and server</h2>
+              <p class="PG_eng">I implemented simplified RTP/RTSP protocol and built buffer to sort the out of order UDP packets.</p>
+              <p class="PG_tc">我實做了簡化版的RTP/RTSP即時串流協議，並利用buffer可以解決潛在的封包順序錯亂的問題。</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://github.com/itsPG/mikochan">
+                <img src="img/mikochan.jpg" alt="mikochan" class="PG_portfolio"/>
+              </a>
+              <h2>Mikochan</h2>
+              <p class="PG_eng">It's an image-based bulletin board system which supports thumbs, threads, and comments. I spent lots of time dealing with the UI.</p>
+              <p class="PG_tc">此程式為貼圖取向的留言系統，支援自動縮圖，討論串，訪客留言等功能。我花了相當的時間在處理UI部份，希望能達到簡潔易用的目標。</p>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="col-lg-4">
+              <a href="https://github.com/itsPG/colorplus.js">
+                <img src="img/color.jpg" alt="color" class="PG_portfolio"/>
+              </a>
+              <h2>ColorPlus.js</h2>
+              <p class="PG_eng">It provides a painless way to color the console in node.js by outputting ANSI escape codes.</p>
+              <p class="PG_tc">此程式透過輸出ANSI色碼的方式幫node.js的console上色。</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://github.com/itsPG/MicroApp-Parser">
+                <img src="img/parser.jpg" alt="parser" class="PG_portfolio"/>
+              </a>
+              <h2>JavaScript Parser</h2>
+              <p class="PG_eng">It parses JavaScript and builds ASTs in JSON format.</p>
+              <p class="PG_tc">此程式可以解析JavaScript，並用JSON的形式輸出parse後的AST。</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://github.com/itsPG/diff.js">
+                <img src="img/diffjs.jpg" alt="diffjs" class="PG_portfolio"/>
+              </a>
+              <h2>Diff.js</h2>
+              <p class="PG_eng">I implemented diff module for node.js. It use LCS algorithm to show the difference between two strings.</p>
+              <p class="PG_tc">我在node.js中用JavaScript實做出diff模組，採用LCS演算法比較出兩字串的相異之處並顯示。</p>
+            </div>
+          </div>
+          <br><br><br><br><br><br><br><br><br><br>
+          <br><br><br><br><br><br><br><br><br><br>
+          <br><br><br><br><br><br><br><br><br><br>
+          <br><br><br>
+        </div>  
+      </div> 
+    </div>
+
+    <div class="PG_bg" style="background: rgba(15%,15%,5%,0.7);" id="skills">
+      <div class="jumbotron container PG_block">
+        <h1 class="PG_title">Skills</h1>
+        <div class="introduction">
+          <div class="col-lg-4">
+            <h2>Languages</h2>
+            <ul>
+              <li>C/C++</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>Python</li>
+              <li>HTML/CSS</li>
+              <li>Regular Expression</li>
+              <li>Markdown</li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h2>Libs / Frameworks</h2>
+            <ul>
+              <li>STL</li>
+              <li>jQuery</li>
+              <li>node.js</li>
+              <li>PEG.js</li>
+              <li>CodeIgniter</li>
+              <li>Express.js</li>
+              <li>app.js</li>
+              <li>Boost</li>
+              <li>Chrome Extension</li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h2>Tools</h2>
+            <ul>
+              <li>Linux</li>
+              <li>FreeBSD</li>
+              <li>git</li>
+              <li>Travis CI</li>
+            </ul>
+          </div>
+          <br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+      </div> 
+    </div>
+    <div class="PG_bg" style="background: rgba(5%,5%,15%,0.7);" id="experience">
+      <div class="jumbotron container PG_block">
+        <h1 class="PG_title">Experience</h1>
+        <div class="introduction PG_eng">
+          <ul>
+            <li>2013, Finished my oral defense of master's degree in NCTU</li>
+            <li>2011, Teaching assistant of Operation System in NCTU</li>
+            <li>2011, Graduated from National Sun-Yat Sen University</li>
+            <li>2009, Teaching assistant of Advanced Programming in NSYSU</li>
+            <li>2006, Graduated from Tainan First Senior High School</li>
+            <li>2005, Director of academic section in TFcis</li>
+          </ul>
+        </div>
+        <div class="introduction PG_tc">
+          <ul>
+            <li>2013, 完成碩士學位口試</li>
+            <li>2011, 交通大學 作業系統 助教</li>
+            <li>2011, 中山大學資工系 畢業</li>
+            <li>2009, 中山大學 高等程式設計與實做 教學</li>
+            <li>2006, 台南一中 畢業</li>
+            <li>2005, 台南一中資訊社 教學</li>
+          </ul>
+        </div>
+      </div> 
+    </div>
+
+
+
+<div class="container" id="PG_footer">
+        <hr>
+
+<footer>
+  <p>Last Modified: <span id="last_modified"></span></p>
+<p>&copy; 2013 itsPG.org. Background is extracted from http://www.kotonohanoniwa.jp/. Template designed by PG.</p>
+<a href="http://validator.w3.org/check?uri=referer"><img src="img/w3c_html5.png" alt="w3c_html5" style="width: 15%;"/></a>
+</footer>
+</div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+        <script src="js/smooth-scroll.js"></script>
+        <script>
+            $(document).ready(function(){
+              $(".change_lang").click(function(){
+                $(".PG_eng").toggle();
+                $(".PG_tc").toggle();
+                return false;
+              });
+              $("#last_modified").html(document.lastModified);
+              $(".PG_disabled_btn").attr("disabled", "true");
+            });
+
+        </script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-30005661-2', 'itspg.org');
+          ga('send', 'pageview');
+        </script>
+    </div></body>
+</html>
